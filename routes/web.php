@@ -43,3 +43,75 @@ Route::get('products/payment', function (){
     return view('products.payment');
 })->name('products.payment');
 
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+});
+
+
+Route::get('/table', function () {
+    return view('tables');
+});
+
+
+Route::get('/login', function () {
+    return view('admin.login');
+});
+
+
+Route::get('/register', function () {
+    return view('admin.register');
+});
+
+
+Route::prefix('mata-pelajaran')->group(function (){
+
+    Route::get('/', function () {
+        return view('mata_pelajaran.index');
+    });
+});
+
+Route::prefix('bab')->group(function (){
+
+    Route::get('/', function () {
+        return view('bab.index');
+    });
+});
+
+Route::prefix('manage-category')->group(function () {
+    Route::get('/', function () {
+        return view('category.index');
+    });
+    Route::get('/create', function () {
+        return view('category.create');
+    });
+});
+
+
+
+Route::prefix('manage-product')->group(function () {
+    Route::get('/', function () {
+        return view('soal.index');
+    });
+
+    Route::get('/edit', function () {
+        return view('soal.edit');
+    });
+
+    Route::get('/create', function () {
+        return view('soal.create');
+    });
+});
+
+Route::prefix('nilai')->group(function (){
+
+    Route::get('/', function () {
+        return view('nilai.index');
+    });
+
+    Route::get('/tampilkan', function () {
+        return view('nilai.show');
+    });
+
+
+});
