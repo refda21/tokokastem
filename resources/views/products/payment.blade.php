@@ -143,7 +143,6 @@
                                         <h4>Payment Method</h4>
                                         <div class="aa-payment-method">
                                             <label for="">Silahkan upload bukti transaksi pada tombol bayar dibawah</label>
-                                            <label for="cashdelivery"><input type="radio" id="cashdelivery" name="optionsRadios"> Cash on Delivery </label>
                                             <label for=""><input type="radio" id="paypal" name="optionsRadios" checked> Via ATM</label>
                                             <img src="https://www.paypalobjects.com/webstatic/mktg/logo/AM_mc_vs_dc_ae.jpg" border="0" alt="PayPal Acceptance Mark">
 

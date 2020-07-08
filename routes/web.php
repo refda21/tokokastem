@@ -64,19 +64,6 @@ Route::get('/register', function () {
 });
 
 
-Route::prefix('mata-pelajaran')->group(function (){
-
-    Route::get('/', function () {
-        return view('mata_pelajaran.index');
-    });
-});
-
-Route::prefix('bab')->group(function (){
-
-    Route::get('/', function () {
-        return view('bab.index');
-    });
-});
 
 Route::prefix('manage-category')->group(function () {
     Route::get('/', function () {
@@ -87,31 +74,21 @@ Route::prefix('manage-category')->group(function () {
     });
 });
 
+Route::prefix('manage-transaction')->group(function () {
+    Route::get('/', function () {
+        return view('transaction.index');
+    });
+    Route::get('/create', function () {
+        return view('transaction.create');
+    });
+});
+
 
 
 Route::prefix('manage-product')->group(function () {
     Route::get('/', function () {
-        return view('soal.index');
+        return view('');
     });
 
-    Route::get('/edit', function () {
-        return view('soal.edit');
-    });
-
-    Route::get('/create', function () {
-        return view('soal.create');
-    });
 });
 
-Route::prefix('nilai')->group(function (){
-
-    Route::get('/', function () {
-        return view('nilai.index');
-    });
-
-    Route::get('/tampilkan', function () {
-        return view('nilai.show');
-    });
-
-
-});

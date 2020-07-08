@@ -18,17 +18,17 @@
         <!-- DataTales Example -->
         <div class="card shadow mb-4">
             <div class="card-header py-3">
-                <p class="m-0 font-weight-bold text-primary">Daftar Kategori</p>
+                <p class="m-0 font-weight-bold text-primary">Daftar Transaksi</p>
                 <hr>
-                <a href="/manage-category/create">tambah kategori</a>
             </div>
             <div class="card-body">
                 <div class="table-responsive">
                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                         <thead>
                         <tr>
-                            <th>id</th>
-                            <th>Nama </th>
+                            <th>No</th>
+                            <th>Tanggal Transaksi </th>
+                            <th>Status Transaksi </th>
                             <th>Aksi </th>
                         </tr>
                         </thead>
@@ -36,7 +36,8 @@
 
                         <tr>
                             <td>1</td>
-                            <td><a href="">lorem ipsum</a></td>
+                            <td><a href="">27 April 2020</a></td>
+                            <td><a href="">Pending</a></td>
                             <td>
                                 <button class="btn btn-outline-primary">
                                     Lihat
@@ -48,22 +49,6 @@
                                     Hapus
                                 </button>
                             </td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td><a href="">Dolor sit amet</a></td>
-                            <td>
-                                <button class="btn btn-outline-primary">
-                                    Lihat
-                                </button>
-                                <button class="btn btn-outline-success">
-                                    Ubah
-                                </button>
-                                <button class="btn btn-outline-danger">
-                                    Hapus
-                                </button>
-                            </td>
-
                         </tr>
 
                         </tbody>
