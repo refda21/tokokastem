@@ -44,9 +44,13 @@ Route::get('products/payment', function (){
 })->name('products.payment');
 
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
+Route::prefix('admin')->group(function (){
+    Route::get('/dashboard', function () {
+        return view('admin.dashboard');
+    });
+    Route::resource('product','ProductController');
 });
+
 
 
 Route::get('/table', function () {

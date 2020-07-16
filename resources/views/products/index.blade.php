@@ -37,7 +37,6 @@
                         <div class="seq-title">
                             <span data-seq>TOTEBAG</span>
                             <h2 data-seq>Disc up to 50%</h2>
-{{--                            <a data-seq href="#" class="aa-shop-now-btn aa-secondary-btn">SHOP NOW</a>--}}
                         </div>
                     </li>
                     <!-- single slide item -->
@@ -100,6 +99,13 @@
                                         <figure>
                                             <a class="aa-product-img" href="#"><img src="img/man/t-shirt-1.png" alt=""></a>
                                             <a class="aa-add-card-btn" href="/products"><span class=""></span>Tote bag</a>
+                                        </figure>
+                                    </li>
+                                    <!-- start single product item -->
+                                    <li>
+                                        <figure>
+                                            <a class="aa-product-img" href="#"><img src="img/man/t-shirt-1.png" alt=""></a>
+                                            <a class="aa-add-card-btn" href="/products"><span class=""></span>T-shirt</a>
                                         </figure>
                                     </li>
                                     <!-- start single product item -->

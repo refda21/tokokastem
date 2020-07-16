@@ -6,7 +6,7 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
-class User extends Model
+class User extends Authenticatable
 {
     use Notifiable;
 
@@ -36,4 +36,20 @@ class User extends Model
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    protected $dates = [
+        'admin_since',
+    ];
+
+    public function orders (){
+        return $this->hasMany(order::class,'customer_id');
+    }
+
+    public function payments(){
+        return $this->hasManyThrough(Payment::class, order::class, 'customer_id');
+    }
+
+    public function image(){
+        return $this->morphOne(Image::class, 'imageable');
+    }
 }
